@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <title>Usługi kosmetyczne</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+<main>
+    <section id="s1">
+        <h2>W ofercie</h2>
+        <ul>
+            <li><a href="twarz.html">Zabiegi na twarz</a>
+                <ol>
+                    <li>
+                        Piling
+                    </li>
+                    <li>
+                        Maska
+                    </li>
+                    <li>
+                        Regulacja brwi
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="index.html">Do strony głównej</a>
+            </li>
+        </ul>
+    </section>
+    <section id="s2">
+        <img src="obraz1.jpg" alt="Kosmetyczna">
+    </section>
+</main>
+
+
+<aside>
+    <section id="s3">
+        <h2>Salon kosmetyczny</h2>
+    </section>
+
+    <section id="s4">
+        <h2>Sprawdź swoje wizity</h2>
+        <input type="checkbox" id="p" value="45">Pilling<br>
+        <input type="checkbox" id="m" value="30">Maska<br>
+        <input type="checkbox" id="mt" value="20">Masaż twarzy<br>
+        <input type="checkbox" id="rb" value="5">Regulacja brwi<br>
+        <input type="button" id="btn" value="Sprawdź cenę">
+        <div id="wynik"></div>
+    </section>
+
+</aside>
+<footer>
+    <p>Autor xxxxxxxx</p>
+</footer>
+
+
+
+<script>
+    btn.addEventListener("click",function(){
+
+
+        var cena=0;
+
+        if(p.checked){
+            cena+=45;
+
+        }
+        if(m.checked){
+
+            cena+=30;
+        }
+        if(mt.checked){
+            cena+=20;
+
+
+        }
+        if(rb.checked){
+            cena+=5;
+
+        }
+
+        wynik.innerHTML = "<b>"+cena+"</b>"
+
+
+    });
+</script>
+</body>
+
+
+</html>
