@@ -6,7 +6,7 @@
 
     const form = document.querySelector('#my_form')
 
-    // inspirowane od Maks Fikus
+    // od Maks Fikus
     function validateNip(nip) {
         if (nip.length != 10) return false
 
